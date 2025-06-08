@@ -11,7 +11,13 @@ spring:
       ddl-auto: update
     show-sql: true
   application:
-    name: HOTELSERVICE
+    name: HOTEL-SERVICE
+
+  config:
+    import: configserver:http://localhost:8085
+
+#  profiles:
+#    active: prod
 
 Eureka:
   instance:
